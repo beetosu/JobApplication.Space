@@ -1,13 +1,79 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	margin: 0;
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+	background-color: #fdfdfd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: calc(10px + 2vmin);
+    color: #333333;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.jobHead {
+	font-size: calc(5px + 2vmin);
+	margin-bottom: -1em;
+	margin-top: -.75em;
+}
+
+.job {
+	padding: 1em;
+	margin: 1em;
+	min-width: calc(15em + 2vmin);
+	border-radius: 0.35em;
+}
+
+.emoji {
+  display: inline-block;
+  width: auto;
+  height: 1.1em;
+  vertical-align: -0.125em;
+}
+
+.filterButton {
+	border: none;
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+	color: #333333;
+	margin-left: .25em;
+	margin-right: .25em;
+	font-size: calc(5px + 2vmin);
+	padding: .25em;
+	padding-right: .5em;
+	padding-left: .3em;
+	border-radius: 0.2em;
+}
+
+.Header {
+	text-align: center;
+	font-size: calc(5px + 1vmax);
+}
+
+.Jobs {
+	margin: 1em;
+	flex-wrap: wrap;
+	flex: 0 33%;
+	justify-content: center;
+	align-content:flex-start;
+	display: flex;
+}
+
+input[type=text] {
+	border: 0px;
+	background: transparent;
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+	color: #333333;
+}
+
+input[name=title] {
+	font-size: calc(15px + 2vmin);
+	font-weight: bold;
+}
+
+input[name=company] {
+	font-size: calc(5px + 2vmin);
+	font-weight: bold;
+}
+
+input[name=location] {
+	font-size: calc(5px + 2vmin);
+	font-weight: bold;
 }
